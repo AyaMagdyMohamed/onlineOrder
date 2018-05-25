@@ -71,6 +71,14 @@
 *      productPrice:
 *        type: "number"
 *        format: "float"
+*  product2:
+*    type: "object"
+*    properties:
+*      productName:
+*        type: "string"
+*      quantity:
+*        type: "number"
+*        format: "float"
 *  users:
 *        type: "array"    
 *        items:
@@ -81,5 +89,5 @@
 *        products:
 *         type: "array"    
 *         items:
-*           $ref: "#/definitions/product"
+*           $ref: "#/definitions/product2"
 */

@@ -17,18 +17,18 @@ function methodNotAllowedHandler (req, resp) {
 }
  /**
  * @swagger
- * /api/Profile:
+ * /api/product:
  *   get:
  *     tags:
- *       - profile
- *     description: Returns all profile
+ *       - product
+ *     description: Returns all products
  *     produces:
  *       - application/json
  *     responses:
  *       200:
- *         description: An array of profiles
+ *         description: An array of products
  *         schema:
- *             $ref: '#/definitions/Profile'
+ *             $ref: '#/definitions/products'
  */
 router.route('/').get(function (req, resp) {
   baseRoute.getAll(req, resp, productModel)
@@ -36,19 +36,19 @@ router.route('/').get(function (req, resp) {
 
  /**
  * @swagger
- * /api/Profile:
+ * /api/product:
  *    post:
  *      tags:
- *       - profile
- *      description: Add new profile
+ *       - product
+ *      description: Add new product
  *      produces:
  *        - application/json
  *      parameters:
- *        - name: profile
+ *        - name: product
  *          in: body
  *          required: true
  *          schema:
- *            $ref: '#/definitions/Profile'
+ *            $ref: '#/definitions/product'
  *      responses:
  *       200:
  *         description: Successfully created
