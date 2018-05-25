@@ -1,0 +1,26 @@
+{
+  "version": "0.0.1",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.3",
+    "clean-deep": "^3.0.2",
+    "continuation-local-storage": "^3.2.1",
+    "decamelize": "^2.0.0",
+    "express-session": "^1.15.6",
+    "http-status": "^1.0.1",
+    "i18n-2": "^0.7.2",
+    "jsonwebtoken": "^8.1.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "sequelize": "^4.37.1",
+    "swagger-jsdoc": "^1.9.7",
+    "swagger-ui-express": "^2.0.15",
+    "swaggerize": "^1.1.0",
+    "underscore": "^1.8.3",
+    "url-pattern": "^1.0.3",
+    "xpress": "^2.4.6"
+  },
+  "main": "server.js"
+}

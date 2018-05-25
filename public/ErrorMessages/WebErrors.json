@@ -1,0 +1,48 @@
+{
+
+    "notFound":{
+             
+        
+            "code": "000",
+            "developerMessage": "",
+            "message": "HTTP 404 Not Found",
+            "status": "404"
+    },
+
+    "unauthorization":{
+
+            "code": "000",
+            "developerMessage": "Authorization header must be provided in format: Bearer {access_token}",
+            "message": "HTTP 401 Unauthorized",
+            "status": "401"
+    },
+    "unauthorized":{
+        
+                    "code": "000",
+                    "developerMessage": "",
+                    "message": "HTTP 401 Unauthorized",
+                    "status": "401"
+            },
+     "BAD_REQUEST":{
+                
+                            "code": "000",
+                            "developerMessage": "",
+                            "message": "HTTP 400 BAD_REQUEST",
+                            "status": "400"
+                    },
+
+   "serverError":{
+         
+        "code": "000",
+        "developerMessage": "",
+        "message": "HTTP 500 Internal Server Error",
+        "status": "500"
+
+   },
+ 
+"notAllowed":
+
+        {"code":"000","developerMessage":"","message":"HTTP 405 Method Not Allowed","status":405}
+
+
+}

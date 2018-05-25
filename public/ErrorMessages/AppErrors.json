@@ -1,0 +1,21 @@
+{
+
+   
+    "ORDER_DETAIL_NULL": {
+
+    
+        "message": "at least on item has to be added to the order."    
+    },
+
+
+    "notAllowed":{
+ 
+        "message": "not allowed to view users"    
+
+    }
+
+
+
+
+
+}

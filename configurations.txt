@@ -1,0 +1,12 @@
+
+secret = hOERSA&@#oOsiiWQ
+time = 86400000
+appId = orderApp
+issuerId = orderWS
+DBName = shop_db
+DBUser = root
+DBPassword = 12345
+DBHost = localhost
+
+
+
