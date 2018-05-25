@@ -13,6 +13,16 @@
 *        type: "string"
 *      password:
 *        type: "string"
+*  User2:
+*    type: "object"
+*    properties:
+*      userId:
+*        type: "integer"
+*        format: "int32"
+*      userName:
+*        type: "string"
+*      order:
+*        $ref: "#/definitions/Order"
 *  Profile:
 *    type: "object"
 *    properties:
@@ -53,4 +63,23 @@
 *      expiresOn:
 *        type: "string"
 *        format: "date-time"
+*  product:
+*    type: "object"
+*    properties:
+*      productName:
+*        type: "string"
+*      productPrice:
+*        type: "number"
+*        format: "float"
+*  users:
+*        type: "array"    
+*        items:
+*          $ref: "#/definitions/User2"
+*  products:
+*    type: "object"
+*    properties:
+*        products:
+*         type: "array"    
+*         items:
+*           $ref: "#/definitions/product"
 */

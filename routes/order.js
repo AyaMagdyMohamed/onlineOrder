@@ -30,11 +30,11 @@ function methodNotAllowedHandler (req, resp) {
  *      produces:
  *        - application/json
  *      parameters:
- *        - name: order
+ *        - name: products
  *          in: body
  *          required: true
  *          schema:
- *            $ref: '#/definitions/Order'
+ *            $ref: '#/definitions/products'
  *      responses:
  *       200:
  *         description: Successfully created

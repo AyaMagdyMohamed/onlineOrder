@@ -27,18 +27,18 @@ function methodNotAllowedHandler (req, resp) {
 
  /**
  * @swagger
- * /api/User:
+ * /api/admin:
  *   get:
  *     tags:
  *       - user
- *     description: Returns all users
+ *     description: Returns all users with there orders
  *     produces:
  *       - application/json
  *     responses:
  *       200:
  *         description: An array of users
  *         schema:
- *             $ref: '#/definitions/User'
+ *             $ref: '#/definitions/users'
  */
 router.get('/', function (req, resp) {
     
