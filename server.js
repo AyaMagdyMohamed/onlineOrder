@@ -5,6 +5,7 @@ const user = require('./routes/userRoute')
 const users = require('./routes/userAuth')
 const profile = require('./routes/profile')
 const product = require('./routes/product')
+const order = require('./routes/order')
 const admin = require('./routes/admin')
 const config = require('./config')
 const httpStatus = require('http-status')
@@ -65,7 +66,8 @@ app.use(prefix + '/authentication', users)
 app.use(prefix + '/profile', profile)
 app.use(prefix + '/user', user)
 app.use(prefix + '/admin', admin)
-app.use(prefix + '/products', product)
+app.use(prefix + '/product', product)
+app.use(prefix + '/order', order)
 
 
 

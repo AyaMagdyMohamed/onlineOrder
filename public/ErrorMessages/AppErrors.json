@@ -11,8 +11,17 @@
     "notAllowed":{
  
         "message": "not allowed to view users"    
+    },
 
-    }
+    "addProduct":{
+        
+               "message": "not allowed to add product"    
+           },
+     "addOrder":{
+            
+                   "message": "not allowed to make order"    
+               }
+    
 
 
 

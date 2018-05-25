@@ -11,7 +11,7 @@ const assignIncludedModels = function (arr) {
 }
 
 const findAllEntities = function (model) {
-  return model.findAll({attributes: { exclude: excludedAttributes }, include: includedModels, limit:20, subQuery: false }).then(
+  return model.findAll({attributes: { exclude: excludedAttributes }, include: includedModels, subQuery: false }).then(
          result => {
            excludedAttributes = []
            includedModels = []
@@ -55,6 +55,8 @@ const findByAttribute = function (model, condition) {
   return model.findOne({where: condition, attributes: { exclude: excludedAttributes }, include: includedModels}).then(result => {
     excludedAttributes = []
     includedModels = []
+    result = JSON.stringify(result)
+    result = JSON.parse(result)
     return result
   }).catch(err => {
     throw err

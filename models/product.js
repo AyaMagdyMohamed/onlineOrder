@@ -20,12 +20,6 @@ const product = sequelize.define('product', {
     type: Sequelize.DOUBLE(30),
     allowNull: true,
     field: 'product_price'
-  },
-  quantity: {
-    type: Sequelize.INTEGER(11),
-    allowNull: true,
-    field: 'quantity',
-    defaultValue: 1
   }
 }, {
     tableName: 'product'

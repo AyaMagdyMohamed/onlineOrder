@@ -15,6 +15,11 @@ const user = sequelize.define('order', {
     allowNull: true,
     field: 'order_price'
   },
+  orderDate: {
+    type: Sequelize.DATE,
+    allowNull: true,
+    field: 'order_price'
+  },
   userId: {
     type: Sequelize.INTEGER(11),
     allowNull: false,

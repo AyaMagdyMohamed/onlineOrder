@@ -2,6 +2,8 @@
 const profile = require('./profile')
 const user = require('./user')
 const order = require('./order')
+const product = require('./product')
+const orderDetail = require('./order_details')
 var db = require('../dbConnection')
 module.exports = {
 
@@ -15,5 +17,14 @@ module.exports = {
   
   userWithOrders: user.hasMany(order, {
     foreignKey: 'userId'
+  }),
+
+  orderModel: order.hasMany(orderDetail, {
+    foreignKey: 'orderId'
+  }),
+
+  orderDetailModel: orderDetail.belongsTo(product, {
+    foreignKey: 'productId'
   })
+
 }

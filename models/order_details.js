@@ -21,6 +21,12 @@ const user = sequelize.define('orderDetail', {
       key: 'product_id'
     },
     field: 'product_id'
+  },
+  quantity: {
+    type: Sequelize.INTEGER(11),
+    allowNull: true,
+    field: 'quantity',
+    defaultValue: 1
   }
 
 }, {

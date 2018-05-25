@@ -67,7 +67,7 @@ router.post('/signup', function (req, resp) {
   })
 })
 
-router.route('/').all(methodNotAllowedHandler)
+router.route('/signup').all(methodNotAllowedHandler)
 /**
  * @swagger
  * /api/User/{id}:
@@ -89,14 +89,15 @@ router.route('/').all(methodNotAllowedHandler)
  *         schema:
  *           $ref: '#/definitions/User'
  */
-router.route('/:username').get(function (req, resp) {
-  console.log(req.params.id)
+router.route('/').get(function (req, resp) {
+  console.log(req.decoded.iss)
+  var id = req.decoded.iss 
   assignConditions()
-  var condition = {userName: req.params.username}
+  var condition = {userId: id}
   baseRoute.getOneEntity(req, resp, userModel, condition)
 })
 
 
-router.route('/:username').all(methodNotAllowedHandler)
+router.route('/').all(methodNotAllowedHandler)
 
 module.exports = router
