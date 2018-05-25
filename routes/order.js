@@ -25,7 +25,7 @@ function methodNotAllowedHandler (req, resp) {
  * /api/order:
  *    post:
  *      tags:
- *       - profile
+ *       - order
  *      description: Add new order
  *      produces:
  *        - application/json
